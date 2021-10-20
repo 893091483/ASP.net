@@ -24,7 +24,7 @@ jobs:
         dotnet-version: 3.1.x
         path: ${{ matrix.projectPath }}/Library
     - name: Build
-      run: dotnet ./build WebApplication1/WebApplication1.sln
+      run: dotnet build ./WebApplication1/WebApplication1.sln
       
     - name: Test
-      run: dotnet test ./build WebApplication1/WebApplication1.sln
+      run: dotnet test ./WebApplication1/WebApplication1.sln
