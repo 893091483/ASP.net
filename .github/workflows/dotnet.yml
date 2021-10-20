@@ -24,7 +24,7 @@ jobs:
         dotnet-version: 3.1.x
         path: ${{ matrix.projectPath }}/Library
     - name: Build
-      run: dotnet build --no-restore
+      run: dotnet build WebApplication1.sln
       
     - name: Test
-      run: dotnet test --no-build --verbosity normal
+      run: dotnet test WebApplication1.sln
